@@ -1,9 +1,7 @@
 👉 **Purpose:**  
 Quick checklist to confirm your Python basics are solid *before moving on*
 
-### Copy–paste this content
 
-```md
 # Python Basics Verification Checklist
 
 Before proceeding to core learning modules, confirm:

@@ -1,5 +1,12 @@
 # AI / ML Python Learning Journey
 
+
+
+
+
+
+
+
 This repository tracks my structured learning path in Python,
 with a strong focus on clean fundamentals, real-world projects,
 and progression toward AI/ML-ready systems.

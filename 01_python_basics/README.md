@@ -1,20 +1,6 @@
 # 🐍 Python Basics – From Zero
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 This module introduces Python programming from the absolute beginning.  
 No prior programming knowledge is required.
 
@@ -34,6 +20,19 @@ Python emphasizes readability and simplicity through a clean syntax.
 
 ## Lesson 1: Running Your First Python Program
 
+The **print()** Function
+
+The print() function displays text or numbers on the screen
+
+Syntax:
+```python
+print("your message")
+```
+
+- Use quotes for text: "Hello" or 'Hello'
+- No quotes for numbers: 42 or 3.15
+- Parenthesis () are required
+
 A Python program is written in a file that typically ends with the `.py` extension.  
 
 **Example:** `hello_python.py`  
@@ -50,9 +49,36 @@ python hello_python.py
 
 If the output Hello, Python appears, your Python environment is working correctly.
 
+
 ## Lesson 2: Variables (Storing Data)
 
+What are Variables ?
+
+Variables are **containers** that store data. Think of them as labeled boxes where you keep information.
+
+(or)
+
 A variable is a named storage location that holds a value in memory.
+
+Why we use variables ?
+- Stores data for later use
+- Make code reusable
+- Make calculations easier
+
+Creating Variables
+
+Syntax:
+
+```python
+varaible_name = value
+```
+
+Rules for naming varaibles:
+- Must start with a letter or underscore: name, _age
+- can contain letters, numbers, underscores: user1, my_store
+- case-sensitive: Name != name
+- No spaces: use my_name not my name
+- Can't use python keywords: print, if, for
 
 ```python
 name = "Dharan"
@@ -73,7 +99,7 @@ age = 26
 
 Python automatically determines the data type of the value stored.
 
-## Lesson 3: Basic Data Types
+### Basic Data Types
 
 Python provides several essential built-in data types:
 
@@ -92,7 +118,7 @@ type(10)      # <class 'int'>
 type("hello") # <class 'str'>
 ```
 
-## Lesson 4: Comments
+### Comments
 
 Comments are lines in the code that are ignored by the Python interpreter. They are used to explain the code for human readers.
 
@@ -103,7 +129,60 @@ pi = 3.14  # A common constant
 
 Comments should explain why the code exists, not just what the code does.
 
-## Lesson 5: Operators
+## Lesson 3: Operators (Math Operations)
+
+What are Math Operations ?
+
+Python can perfomr calculations just like a calculator. These operations are essential for AI - calculating accuracy, loss, weight, etc.
+
+Basic Math Operators
+
+| Operator  |Name                |Example | Result |
+|:---------:|:------------------:|:------:|:------:|
+| +         | Addition           | 5+3    | 8      |
+| -         | Subtraction        | 10-4   | 6      |
+| *         | Multiplication     | 6*7    | 42     |
+| /         | Division           | 15/3   | 5.0    |
+| //        | Floor Division     | 17//5  | 3      |
+| %         | Modulus(Remainder) | 17%5   | 2      |
+| **        | Power(Exponent)    | 2**3   | 8      |
+
+Order of Operations (PEMDAS)
+Python follows math rules:
+1. **P**arenthesis ()
+2. **E**xponents **
+3. **M**ultiplications & **D**ivisions *, /
+4. **A**ddition & **S**ubtraction +, -
+
+Compound Assignment Operators
+
+Shorcuts for updating variables:
+- x += 5 --> same as x = x + 5
+- x -= 5 --> same as x = x - 5
+- x *= 5 --> same as x = x * 5
+- x /= 5 --> same as x = x / 5
+
+Comparison Operators
+
+| Operator   |Name                 |Example    | Result |
+|:----------:|:-------------------:|:---------:|:------:|
+| ==         | Equal to            | 5 == 5    | True   |
+| !=         | Not equal to        | 5 != 3    | True   |
+| >          | Greater than        | 10 > 5    | True   |
+| <          | Less than           | 3 < 7     | True   |
+| >=         | Greater or equal    | 5 >= 5    | True   |
+| <=         | Less or equal       | 4 <= 3    | False  |
+
+**Important**: = assigns, == compares!
+
+Logical Operators
+
+| Operator   |Name                     |Example                          |
+|:----------:|:-----------------------:|:-------------------------------:|
+| and        | Both must be true       | (5 > 3) and (10 < 20) --> True  |
+| or         | At least 1 must be true | (5 > 10) and (3 < 5) --> True  |
+| not        | opposite                |  not (5 > 3) --> False          |
+
 Operators perform operations on values and variables.
 
 **Arithmetic Operators**
@@ -155,6 +234,33 @@ and  # True if BOTH conditions are True
 or   # True if AT LEAST ONE condition is True
 not  # Inverts the Boolean value (True becomes False, and vice-versa)
 ```
+
+## Lesson 4: Strings
+
+What are Strings ?
+
+Strings are text data - any sequence of data enclosed in quotes.
+
+Creating strigns:
+```python
+name = "python" # Double quotes
+city = 'bengaluru' # single quotes
+message = """    
+"""             # Triple quotes
+```
+
+Why String Matter for AI ?
+- Processing text data (NLP - Natural Language Processing)
+- Reading/Writing files
+- User input/output
+- Data cleaning and preprocessing
+
+String Operation
+- **Concatenation** - Combining strings with +
+- **Repetion** - Repeating strings with *
+- **Indexing** - Accessing individual characters
+- **Slicing** - Extracting parts of strings
+- **Methods** - Built-in functions to manipulate strings
 
 ## Lesson 6: Type Casting
 Type casting (or type conversion) converts a value from one data type to another.
